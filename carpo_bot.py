@@ -84,7 +84,7 @@ def main():
         if user_location:
             nearest_places_indexes = getNearestPlacesIndexes(tree, user_location['latitude'], user_location['longitude'], 0.3)
             
-            for i in nearest_places_indexes:
+            for i in nearest_places_indexes[0]:
                 carpo_bot.send_location(last_chat_id, places[i]['lat'], places[i]['lng'])
 
         new_offset = last_update_id + 1

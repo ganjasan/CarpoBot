@@ -25,4 +25,6 @@ def getNearestPlacesIndexes(tree, lat, lng, radius):
 
 places = loadPlaces('places.csv')
 tree = getKDTree(places)
-print(getNearestPlacesIndexes(tree, 59.944009, 30.295718, 0.3))
+coords = getNearestPlacesIndexes(tree, 59.944009, 30.295718, 0.3)
+for i in coords[0]:
+    print(i)
