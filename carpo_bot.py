@@ -54,7 +54,10 @@ def main():
         last_chat_id = last_update['message']['chat']['id']
         last_chat_name = last_update['message']['chat']['first_name']
 
-        carpo_bot.send_message(last_chat_id, str(last_update))
+        user_location = last_update['message']['location'] if 'location' in last_update['message'] else {}
+
+        if user_location:
+            carpo_bot.send_location(last_chat_id, user_location['latitude'], user_location['longitude'])
 
         new_offset = last_update_id + 1
 
