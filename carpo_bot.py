@@ -1,5 +1,28 @@
 import requests  
 import datetime
+import csv
+from sklearn import neighbors
+import numpy as np
+
+def loadPlaces(filename):
+
+    with open(filename) as f:
+        reader = csv.reader(f, delimiter=';', skipinitialspace=True)
+        header = next(reader)
+        places_dict_list = [dict(zip(header, map(str, row))) for row in reader]
+        return places_dict_list
+
+def getKDTree(places):
+    coords = [[i['lat'], i['lng']] for i in places]
+    X = np.array(coords)
+    tree = neighbors.KDTree(X, leaf_size=2)
+
+    return tree
+
+def getNearestPlacesIndexes(tree, lat, lng, radius):
+    return tree.query_radius([[lat, lng]], r=radius)
+
+
 
 class BotHandler:
 
@@ -40,9 +63,11 @@ class BotHandler:
 carpo_bot = BotHandler('630168364:AAGihSK-Jki5nMZfw6IdRQs-PEwaJpZ30Cw')  
 now = datetime.datetime.now()
 
-
 def main():  
     new_offset = None
+
+    places = loadPlaces('places.csv')
+    tree = getKDTree(places)
 
     while True:
         carpo_bot.get_updates(new_offset)
@@ -57,7 +82,10 @@ def main():
         user_location = last_update['message']['location'] if 'location' in last_update['message'] else {}
 
         if user_location:
-            carpo_bot.send_location(last_chat_id, user_location['latitude'], user_location['longitude'])
+            nearest_places_indexes = getNearestPlacesIndexes(tree, user_location['latitude'], user_location['longitude'], 0.3)
+            
+            for i in nearest_places_indexes:
+                carpo_bot.send_location(last_chat_id, places[i]['lat'], places[i]['lng'])
 
         new_offset = last_update_id + 1
 
