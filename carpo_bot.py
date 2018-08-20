@@ -55,7 +55,7 @@ class BotHandler:
         if len(get_result) > 0:
             last_update = get_result[-1]
         else:
-            last_update = get_result[len(get_result)]
+            last_update = {}
 
         return last_update
 
@@ -74,21 +74,24 @@ def main():
 
         last_update = carpo_bot.get_last_update()
 
-        last_update_id = last_update['update_id']
-        #last_chat_text = last_update['message']['text'] if 'text' in last_update['message'] else ''
-        last_chat_id = last_update['message']['chat']['id']
-        last_chat_name = last_update['message']['chat']['first_name']
-
-        user_location = last_update['message']['location'] if 'location' in last_update['message'] else {}
-
-        if user_location:
-            nearest_places_indexes = getNearestPlacesIndexes(tree, user_location['latitude'], user_location['longitude'], 0.3)
+        if last_update:
             
-            for i in nearest_places_indexes[0]:
-                carpo_bot.send_message(last_chat_id, places[i]['title'])
-                carpo_bot.send_location(last_chat_id, places[i]['lat'], places[i]['lng'])
+            last_update_id = last_update['update_id']
+            #last_chat_text = last_update['message']['text'] if 'text' in last_update['message'] else ''
+            last_chat_id = last_update['message']['chat']['id']
+            last_chat_name = last_update['message']['chat']['first_name']
 
-        new_offset = last_update_id + 1
+            user_location = last_update['message']['location'] if 'location' in last_update['message'] else {}
+
+            if user_location:
+                nearest_places_indexes = getNearestPlacesIndexes(tree, user_location['latitude'], user_location['longitude'], 0.3)
+                
+                for i in nearest_places_indexes[0]:
+                    carpo_bot.send_message(last_chat_id, places[i]['title'])
+                    carpo_bot.send_location(last_chat_id, places[i]['lat'], places[i]['lng'])
+
+            new_offset = last_update_id + 1
+
 
 if __name__ == '__main__':  
     try:
