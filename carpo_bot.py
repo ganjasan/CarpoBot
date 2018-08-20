@@ -20,6 +20,12 @@ class BotHandler:
         resp = requests.post(self.api_url + method, params)
         return resp
 
+    def send_location(self, chat_id, lat, lng):
+        params = {'chat_id': chat_id, 'latitude': lat, 'longitude': lng}
+        method = 'sendLocation'
+        resp = requests.post(self.api_url + method, params)
+        return resp
+
     def get_last_update(self):
         get_result = self.get_updates()
 
@@ -44,11 +50,11 @@ def main():
         last_update = carpo_bot.get_last_update()
 
         last_update_id = last_update['update_id']
-        last_chat_text = last_update['message']['text'] if 'text' in last_update['message'] else ''
+        #last_chat_text = last_update['message']['text'] if 'text' in last_update['message'] else ''
         last_chat_id = last_update['message']['chat']['id']
         last_chat_name = last_update['message']['chat']['first_name']
 
-        carpo_bot.send_message(last_chat_id, last_chat_text)
+        carpo_bot.send_message(last_chat_id, str(last_update))
 
         new_offset = last_update_id + 1
 
