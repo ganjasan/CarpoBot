@@ -1,1 +1,1 @@
-web: python carpo_bot.py
+worker: python carpo_bot.py
