@@ -31,7 +31,7 @@ class BotHandler:
         return last_update
 
 
-carpo_bot = BotHandler(token)  
+carpo_bot = BotHandler('630168364:AAGihSK-Jki5nMZfw6IdRQs-PEwaJpZ30Cw')  
 now = datetime.datetime.now()
 
 
