@@ -75,6 +75,11 @@ bot = telebot.TeleBot(config.token)
 places = loadPlacesFromKML(config.places_kml_file)
 trees = getKDTrees(places)
 
+main_keyboard = telebot.types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True)
+button_geo = types.KeyboardButton(text="Отправить местоположение", request_location=True)
+keyboard.add(button_phone, button_geo)
+bot.send_message(message.chat.id, reply_markup=keyboard)
+
 
 @bot.message_handler(commands=['start', 'help'])
 def handle_start_help(message):
@@ -101,7 +106,7 @@ def callback_inline(call):
 
     place_type = call.data
 
-    bot.send_message(call.message.chat.id, "====== " + place_type + " =======")
+    bot.send_message(call.message.chat.id, "Ищу " + place_type.lower())
 
     nearest_places_indexes = getNearestPlacesIndexes(trees[place_type], 59.943996 , 30.295759 , 5)
     
