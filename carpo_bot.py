@@ -101,7 +101,7 @@ def callback_inline(call):
 
     place_type = call.data
 
-    nearest_places_indexes = getNearestPlacesIndexes(trees['Все заведения'], 59.943996 , 30.295759 , 5)
+    nearest_places_indexes = getNearestPlacesIndexes(trees[place_type], 59.943996 , 30.295759 , 5)
     
     for i in nearest_places_indexes:
         nearest_place = places['Все заведения'][i]
