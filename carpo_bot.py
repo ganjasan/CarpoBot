@@ -7,25 +7,6 @@ import config
 import telebot
 import messages
 
-bot = telebot.TeleBot(config.token)
-
-places = loadPlacesFromKML(config.places_kml_file)
-trees = getKDTrees(places)
-
-
-@bot.message_handler(commands=['start', 'help'])
-def handle_start_help(message):
-    bot.send_message(message.chat.id, messages.repeat_messages['ru']['help'])
-
-@bot.message_handler(content_types=["text"])
-def repeat_all_text_messages(message):
-    bot.send_message(message.chat.id, messages.repeat_messages['ru']['no_repeat'])
-
-@bot.message_handler(content_types=["location"])
-def send_nearest_places(message):
-    bot.send_message(message.chat.id, str(message))
-
-
 # loader
 ns = {'kml': 'http://www.opengis.net/kml/2.2'}
 
@@ -89,10 +70,28 @@ def getNearestPlacesIndexes(tree, lat, lng, neighbors_k ):
 
     return ind[0]
 
+bot = telebot.TeleBot(config.token)
+
+places = loadPlacesFromKML(config.places_kml_file)
+trees = getKDTrees(places)
+
+
+@bot.message_handler(commands=['start', 'help'])
+def handle_start_help(message):
+    bot.send_message(message.chat.id, messages.repeat_messages['ru']['help'])
+
+@bot.message_handler(content_types=["text"])
+def repeat_all_text_messages(message):
+    bot.send_message(message.chat.id, messages.repeat_messages['ru']['no_repeat'])
+
+@bot.message_handler(content_types=["location"])
+def send_nearest_places(message):
+    bot.send_message(message.chat.id, str(message))
+
+
+
 
 #main
 
 if __name__ == '__main__':
-
-
    bot.polling(none_stop=True)
