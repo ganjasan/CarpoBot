@@ -94,7 +94,7 @@ def send_nearest_places(message):
         button = telebot.types.InlineKeyboardButton(text = place_type)
         keyboard.add(button)
 
-    bot.send_message(message.chat.id,  messages.repeat_messages['ru']['place_type_repeat'], reply_markup=keyboard)
+    bot.send_message(message.chat.id, messages.repeat_messages['ru']['place_type_repeat'], reply_markup=keyboard)
 
 
     #earest_places_indexes = getNearestPlacesIndexes(trees['Все заведения'], location.latitude,  location.longitude, 5)
