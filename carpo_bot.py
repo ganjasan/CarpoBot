@@ -104,7 +104,7 @@ def send_nearest_places(message):
     keyboard = telebot.types.InlineKeyboardMarkup()
 
     for place_type in places.keys():
-        button = telebot.types.InlineKeyboardButton(text = place_type, callback_data = "Все заведения" + "#" + str(59.929065) + "#" + str(30.471106))
+        button = telebot.types.InlineKeyboardButton(text = place_type, callback_data = place_type + "#" + str(location.latitude) + "#" + str(location.longitude))
         #bot.send_message(message.chat.id, "Все заведения" + "#" + str(59.929065) + "#" + str(30.471106))
         keyboard.add(button)
 
