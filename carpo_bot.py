@@ -96,7 +96,7 @@ def send_nearest_places(message):
 
     bot.send_message(message.chat.id, messages.repeat_messages['ru']['place_type_repeat'], reply_markup=keyboard)
 
-#@bot.callback_query_handler(func=lambda call: True)
+@bot.callback_query_handler(func=lambda call: True)
 def callback_inline(call):
 
     place_type = call.data
