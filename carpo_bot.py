@@ -101,6 +101,8 @@ def callback_inline(call):
 
     place_type = call.data
 
+    bot.send_message(call.message.chat.id, "====== " + place_type + " =======")
+
     nearest_places_indexes = getNearestPlacesIndexes(trees[place_type], 59.943996 , 30.295759 , 5)
     
     for i in nearest_places_indexes:
