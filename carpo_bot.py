@@ -19,13 +19,19 @@ def loadPlacesFromKML(kml_filename):
     folders = document.findall("kml:Folder", ns)
 
     places = {
-        'Все заведения':[],
+        '0': {
+            'name': 'Все заведения',
+            'list': [],
+        },
     }
 
     for folder in folders:
+
+        places_type_index = 1
+
         folder_name = folder.find('kml:name',ns).text
 
-        places[folder_name]  = []
+        places[str(places_type_index)]  = []
 
         places_in_folder = folder.findall('kml:Placemark', ns)
 
@@ -46,8 +52,10 @@ def loadPlacesFromKML(kml_filename):
                 place['lat'] = coords[1]
                 place['lng'] = coords[0]
 
-            places['Все заведения'].append(place)
-            places[folder_name].append(place)
+            places['0'].append(place)
+            places[places_type_index].append(place)
+
+        places_type_index+=1
 
     return places
 
@@ -56,12 +64,12 @@ def getKDTrees(places):
 
     trees = {}
 
-    for place_type in places.keys():
+    for place_type_index in places.keys():
         coords = [[i['lat'], i['lng']] for i in places[place_type]]
         X = np.array(coords)
         tree = neighbors.KDTree(X, leaf_size=2)
 
-        trees[place_type] = tree
+        trees[place_type_index] = tree
 
     return trees
 
@@ -103,8 +111,8 @@ def send_nearest_places(message):
 
     keyboard = telebot.types.InlineKeyboardMarkup()
 
-    for place_type in places.keys():
-        button = telebot.types.InlineKeyboardButton(text = place_type, callback_data = str(places.keys().index(place_type)) + "#" + str(location.latitude) + "#" + str(location.longitude))
+    for place_type_index in places.keys():
+        button = telebot.types.InlineKeyboardButton(text = places[places_type_index]['name'], callback_data = places_type_index + "#" + str(location.latitude) + "#" + str(location.longitude))
         #bot.send_message(message.chat.id, "Все заведения" + "#" + str(59.929065) + "#" + str(30.471106))
         keyboard.add(button)
 
@@ -114,15 +122,14 @@ def send_nearest_places(message):
 def callback_inline(call):
 
     data = call.data.split("#")
-    place_type = places.keys()[int(data[0])]
+    place_type_index = data[0]
 
     lat = data[1]
     lng = data[2]
 
+    bot.send_message(call.message.chat.id, "Ищу " + places[places_type_index]['name'].lower())
 
-    bot.send_message(call.message.chat.id, "Ищу " + place_type.lower())
-
-    nearest_places_indexes = getNearestPlacesIndexes(trees[place_type], lat , lng, 5)
+    nearest_places_indexes = getNearestPlacesIndexes(trees[place_type_index], lat , lng, 5)
     
     for i in nearest_places_indexes:
         nearest_place = places[place_type][i]
