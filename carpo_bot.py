@@ -91,7 +91,7 @@ def send_nearest_places(message):
     keyboard = telebot.types.InlineKeyboardMarkup()
 
     for place_type in places.keys():
-        button = telebot.types.InlineKeyboardButton(text = place_type, callback_data = 'place_type')
+        button = telebot.types.InlineKeyboardButton(text = place_type, callback_data = 'place type')
         keyboard.add(button)
 
     bot.send_message(message.chat.id, messages.repeat_messages['ru']['place_type_repeat'], reply_markup=keyboard)
