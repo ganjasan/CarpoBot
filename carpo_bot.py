@@ -94,7 +94,7 @@ def send_nearest_places(message):
         nearest_place = places['Все заведения'][i]
 
         bot.send_message(message.chat.id, nearest_place['name'] + '\n' + nearest_place['description'])
-        bot.send_location(message.chat.id, nearest_place['lat'], nearest_place['lng'])
+        bot.send_location(message.chat.id, nearest_place['lng'], nearest_place['lat'])
 
 
 
