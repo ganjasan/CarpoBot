@@ -88,13 +88,22 @@ def repeat_all_text_messages(message):
 def send_nearest_places(message):
     location = message.location
 
-    nearest_places_indexes = getNearestPlacesIndexes(trees['Все заведения'], location.latitude,  location.longitude, 5)
-    
-    for i in nearest_places_indexes:
-        nearest_place = places['Все заведения'][i]
+    keyboard = telebot.types.InlineKeyboardMarkup()
 
-        bot.send_message(message.chat.id, nearest_place['name'] + '\n' + nearest_place['description'])
-        bot.send_location(message.chat.id, nearest_place['lat'], nearest_place['lng'])
+    for place_type in places.keys():
+        button = telebot.types.InlineKeyboardButton(text = place_type)
+        keyboard.add(button)
+
+    bot.send_message(message.chat.id,  messages.repeat_messages['ru']['place_type_repeat'], reply_markup=keyboard)
+
+
+    #earest_places_indexes = getNearestPlacesIndexes(trees['Все заведения'], location.latitude,  location.longitude, 5)
+    
+    #for i in nearest_places_indexes:
+    #    nearest_place = places['Все заведения'][i]
+
+    #    bot.send_message(message.chat.id, nearest_place['name'] + '\n' + nearest_place['description'])
+    #    bot.send_location(message.chat.id, nearest_place['lat'], nearest_place['lng'])
 
 
 #main
