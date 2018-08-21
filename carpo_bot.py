@@ -31,6 +31,7 @@ def loadPlacesFromKML(kml_filename):
 
         folder_name = folder.find('kml:name',ns).text
 
+        places[str(places_type_index)] = {}
         places[str(places_type_index)]['name'] = folder_name
         places[str(places_type_index)]['list'] = []
 
