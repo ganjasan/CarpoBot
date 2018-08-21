@@ -59,6 +59,8 @@ def loadPlacesFromKML(kml_filename):
 
         places_type_index+=1
 
+    print(places.keys())
+
     return places
 
 
