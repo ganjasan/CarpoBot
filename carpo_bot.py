@@ -76,8 +76,6 @@ def getKDTrees(places):
     return trees
 
 def getNearestPlacesIndexes(tree, lat, lng, neighbors_k ):
-    if(len(tree) < neighbors_k):
-        neighbors_k = len(tree)
 
     dist, ind = tree.query([[lat, lng]], k=neighbors_k)
 
@@ -134,7 +132,8 @@ def callback_inline(call):
 
     bot.send_message(call.message.chat.id, "Ищу " + places[place_type_index]['name'].lower())
 
-    nearest_places_indexes = getNearestPlacesIndexes(trees[place_type_index], lat , lng, 5)
+    query_k = 5 if len(places[place_type_index]['list']) > 5 else len(places[place_type_index]['list'])
+    nearest_places_indexes = getNearestPlacesIndexes(trees[place_type_index], lat , lng, query_k)
     
     for i in nearest_places_indexes:
         nearest_place = places[place_type_index]['list'][i]
