@@ -79,10 +79,11 @@ def show_main_keyboard(message):
     main_keyboard = telebot.types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True)
     button_geo = telebot.types.KeyboardButton(text="Отправить местоположение", request_location=True)
     main_keyboard.add(button_geo)
-    bot.send_message(message.chat.id, 'Отправь мне своё местоположение, или воспользуйся кнопкой ниже', reply_markup=main_keyboard)  
+    bot.send_message(message.chat.id, 'Отправь мне своё местоположение, или воспользуйся кнопкой ниже, а я поищу интересности рядом с тобой.', reply_markup=main_keyboard)  
 
 @bot.message_handler(commands=['start', 'help'])
 def handle_start_help(message):
+    bot.send_message(message.chat.id, str(message))
     bot.send_message(message.chat.id, messages.repeat_messages['ru']['help'])
     show_main_keyboard(message)
 
