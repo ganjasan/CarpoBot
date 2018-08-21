@@ -31,7 +31,8 @@ def loadPlacesFromKML(kml_filename):
 
         folder_name = folder.find('kml:name',ns).text
 
-        places[str(places_type_index)]  = []
+        places[str(places_type_index)]['name'] = folder_name
+        places[str(places_type_index)]['list'] = []
 
         places_in_folder = folder.findall('kml:Placemark', ns)
 
@@ -52,8 +53,8 @@ def loadPlacesFromKML(kml_filename):
                 place['lat'] = coords[1]
                 place['lng'] = coords[0]
 
-            places['0'].append(place)
-            places[places_type_index].append(place)
+            places['0']['list'].append(place)
+            places[places_type_index]['list'].append(place)
 
         places_type_index+=1
 
@@ -65,7 +66,7 @@ def getKDTrees(places):
     trees = {}
 
     for place_type_index in places.keys():
-        coords = [[i['lat'], i['lng']] for i in places[place_type]]
+        coords = [[i['lat'], i['lng']] for i in places[place_type_index]['list']]
         X = np.array(coords)
         tree = neighbors.KDTree(X, leaf_size=2)
 
@@ -132,7 +133,7 @@ def callback_inline(call):
     nearest_places_indexes = getNearestPlacesIndexes(trees[place_type_index], lat , lng, 5)
     
     for i in nearest_places_indexes:
-        nearest_place = places[place_type][i]
+        nearest_place = places[place_type_index]['list'][i]
 
         bot.send_message(call.message.chat.id, nearest_place['name'] + '\n' + nearest_place['description'])
         bot.send_location(call.message.chat.id, nearest_place['lat'], nearest_place['lng'])
