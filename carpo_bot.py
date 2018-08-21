@@ -106,7 +106,7 @@ def callback_inline(call):
     nearest_places_indexes = getNearestPlacesIndexes(trees[place_type], 59.943996 , 30.295759 , 5)
     
     for i in nearest_places_indexes:
-        nearest_place = places['Все заведения'][i]
+        nearest_place = places[place_type][i]
 
         bot.send_message(call.message.chat.id, nearest_place['name'] + '\n' + nearest_place['description'])
         bot.send_location(call.message.chat.id, nearest_place['lat'], nearest_place['lng'])
