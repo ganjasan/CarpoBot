@@ -43,8 +43,8 @@ def loadPlacesFromKML(kml_filename):
             if point is not None:
                 kml_coords = point.find('kml:coordinates', ns)
                 coords = kml_coords.text.strip().split(',') if kml_coords is not None else [0,0,0]
-                place['lat'] = coords[0]
-                place['lng'] = coords[1]
+                place['lat'] = coords[1]
+                place['lng'] = coords[0]
 
             places['Все заведения'].append(place)
             places[folder_name].append(place)
@@ -94,10 +94,7 @@ def send_nearest_places(message):
         nearest_place = places['Все заведения'][i]
 
         bot.send_message(message.chat.id, nearest_place['name'] + '\n' + nearest_place['description'])
-        bot.send_location(message.chat.id, nearest_place['lng'], nearest_place['lat'])
-
-
-
+        bot.send_location(message.chat.id, nearest_place['lat'], nearest_place['lng'])
 
 
 #main
