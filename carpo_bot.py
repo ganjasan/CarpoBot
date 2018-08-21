@@ -3,6 +3,18 @@ import datetime
 import csv
 from sklearn import neighbors
 import numpy as np
+import config
+import telebot
+import messages
+
+bot = telebot.TeleBot(config.token)
+
+@bot.message_handler(content_types=["text"])
+def repeat_all_text_messages(message):
+    bot.send_message(message.chat.id, messages['ru']['no_repeat'])
+
+
+
 
 def loadPlaces(filename):
 
@@ -94,7 +106,4 @@ def main():
 
 
 if __name__ == '__main__':  
-    try:
-        main()
-    except KeyboardInterrupt:
-        exit()
+   bot.polling(none_stop=True)
