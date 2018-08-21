@@ -76,7 +76,7 @@ places = loadPlacesFromKML(config.places_kml_file)
 trees = getKDTrees(places)
 
 main_keyboard = telebot.types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True)
-button_geo = types.KeyboardButton(text="Отправить местоположение", request_location=True)
+button_geo = telebot.types.KeyboardButton(text="Отправить местоположение", request_location=True)
 main_keyboard.add(button_geo)
 bot.send_message(message.chat.id, reply_markup=main_keyboard)
 
