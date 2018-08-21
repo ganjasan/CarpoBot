@@ -91,19 +91,23 @@ def send_nearest_places(message):
     keyboard = telebot.types.InlineKeyboardMarkup()
 
     for place_type in places.keys():
-        button = telebot.types.InlineKeyboardButton(text = place_type, callback_data = 'place_type')
+        button = telebot.types.InlineKeyboardButton(text = place_type, callback_data = place_type)
         keyboard.add(button)
 
     bot.send_message(message.chat.id, messages.repeat_messages['ru']['place_type_repeat'], reply_markup=keyboard)
 
+@bot.callback_query_handler(func=lambda call: True)
+def callback_inline(call):
 
-    #earest_places_indexes = getNearestPlacesIndexes(trees['Все заведения'], location.latitude,  location.longitude, 5)
+    place_type = call.data
+
+    nearest_places_indexes = getNearestPlacesIndexes(trees['Все заведения'], 59.943996 , 30.295759 , 5)
     
-    #for i in nearest_places_indexes:
-    #    nearest_place = places['Все заведения'][i]
+    for i in nearest_places_indexes:
+        nearest_place = places['Все заведения'][i]
 
-    #    bot.send_message(message.chat.id, nearest_place['name'] + '\n' + nearest_place['description'])
-    #    bot.send_location(message.chat.id, nearest_place['lat'], nearest_place['lng'])
+        bot.send_message(message.chat.id, nearest_place['name'] + '\n' + nearest_place['description'])
+        bot.send_location(message.chat.id, nearest_place['lat'], nearest_place['lng'])
 
 
 #main
