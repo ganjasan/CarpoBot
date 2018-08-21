@@ -87,7 +87,15 @@ def repeat_all_text_messages(message):
 @bot.message_handler(content_types=["location"])
 def send_nearest_places(message):
     location = message.location
-    bot.send_location(message.chat.id, location.latitude, location.longitude)
+
+    nearest_places_indexes = getNearestPlacesIndexes(trees['Все заведения'], location.latitude,  location.longitude, 5)
+    
+    for i in nearest_places_indexes:
+        nearest_place = places['Все заведения'][i]
+
+        bot.send_message(message.chat.id, nearest_place['name'] + '\n' + nearest_place['description'])
+        bot.send_location(message.chat.id, nearest_place['lat'], nearest_place['lng'])
+
 
 
 
