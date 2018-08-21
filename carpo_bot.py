@@ -11,9 +11,7 @@ bot = telebot.TeleBot(config.token)
 
 @bot.message_handler(content_types=["text"])
 def repeat_all_text_messages(message):
-    bot.send_message(message.chat.id, messages['ru']['no_repeat'])
-
-
+    bot.send_message(message.chat.id, messages.repeat_messages['ru']['no_repeat'])
 
 
 def loadPlaces(filename):
