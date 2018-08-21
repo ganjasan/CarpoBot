@@ -81,11 +81,17 @@ def show_main_keyboard(message):
     main_keyboard.add(button_geo)
     bot.send_message(message.chat.id, 'Отправь мне своё местоположение, или воспользуйся кнопкой ниже, а я поищу интересности рядом с тобой.', reply_markup=main_keyboard)  
 
-@bot.message_handler(commands=['start', 'help'])
-def handle_start_help(message):
-    bot.send_message(message.chat.id, str(message))
+@bot.message_handler(commands=['start'])
+def handle_start(message):
+    bot.send_message(message.chat.id, "Привет, " + message.from_user.first_name +"!")
     bot.send_message(message.chat.id, messages.repeat_messages['ru']['help'])
     show_main_keyboard(message)
+
+@bot.message_handler(commands=['help'])
+def handle_start(message):
+    bot.send_message(message.chat.id, messages.repeat_messages['ru']['help'])
+    show_main_keyboard(message)
+
 
 @bot.message_handler(content_types=["text"])
 def repeat_all_text_messages(message):
@@ -98,7 +104,7 @@ def send_nearest_places(message):
     keyboard = telebot.types.InlineKeyboardMarkup()
 
     for place_type in places.keys():
-        button = telebot.types.InlineKeyboardButton(text = place_type, callback_data = place_type)
+        button = telebot.types.InlineKeyboardButton(text = place_type, callback_data = place_type + "|" + location.latitude + "|" + location.longitude)
         keyboard.add(button)
 
     bot.send_message(message.chat.id, messages.repeat_messages['ru']['place_type_repeat'], reply_markup=keyboard)
@@ -106,11 +112,16 @@ def send_nearest_places(message):
 @bot.callback_query_handler(func=lambda call: True)
 def callback_inline(call):
 
-    place_type = call.data
+    data = call.data.split("|")
+    place_type = data[0]
+
+    lat = data[1]
+    lng = data[2]
+
 
     bot.send_message(call.message.chat.id, "Ищу " + place_type.lower())
 
-    nearest_places_indexes = getNearestPlacesIndexes(trees[place_type], 59.943996 , 30.295759 , 5)
+    nearest_places_indexes = getNearestPlacesIndexes(trees[place_type], lat , lng, 5)
     
     for i in nearest_places_indexes:
         nearest_place = places[place_type][i]
