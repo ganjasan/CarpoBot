@@ -1,0 +1,3978 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Карта локальных мест Петроградки</name>
+    <description><![CDATA[Делаем карту вместе — добавляй свои места. <br>Критерии: не сетевые и проверенные вами.<br>t.me/todaywecan  <br><br>Чтобы добавить место на карту, нужно нажать "Изменить", слева в меню найти подходящий блок, нажать на него, а затем ввести название заведения или его адрес в поисковую строку. Google предложит добавить место, после чего оно появится на карте.<br><br>Если кто-то готов периодически мониторить (удалять неформатные места, рекламу) карту и дополнять информацию о уже существующих на этой карте местах, то напишите Оле (vk.com/olga_mn). <br>Если кто-то готов скинуться на печать карты, то тоже пишите Оле (тираж 2000 штук стоит 6000 рублей).]]></description>
+    <Style id="icon-1535-FFD600-normal">
+      <IconStyle>
+        <color>ff00d6ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1535-FFD600-highlight">
+      <IconStyle>
+        <color>ff00d6ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1535-FFD600">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1535-FFD600-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1535-FFD600-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1549-FF5252-normal">
+      <IconStyle>
+        <color>ff5252ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1549-FF5252-highlight">
+      <IconStyle>
+        <color>ff5252ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1549-FF5252">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1549-FF5252-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1549-FF5252-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-006064-nodesc-normal">
+      <IconStyle>
+        <color>ff646000</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-006064-nodesc-highlight">
+      <IconStyle>
+        <color>ff646000</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-006064-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-006064-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-006064-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-0097A7-nodesc-normal">
+      <IconStyle>
+        <color>ffa79700</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-0097A7-nodesc-highlight">
+      <IconStyle>
+        <color>ffa79700</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-0097A7-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-0097A7-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-0097A7-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-01579B-nodesc-normal">
+      <IconStyle>
+        <color>ff9b5701</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-01579B-nodesc-highlight">
+      <IconStyle>
+        <color>ff9b5701</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-01579B-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-01579B-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-01579B-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-0288D1-nodesc-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-0288D1-nodesc-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-0288D1-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-0288D1-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-0288D1-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-097138-nodesc-normal">
+      <IconStyle>
+        <color>ff387109</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-097138-nodesc-highlight">
+      <IconStyle>
+        <color>ff387109</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-097138-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-097138-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-097138-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-0F9D58-nodesc-normal">
+      <IconStyle>
+        <color>ff589d0f</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-0F9D58-nodesc-highlight">
+      <IconStyle>
+        <color>ff589d0f</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-0F9D58-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-0F9D58-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-0F9D58-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-1A237E-nodesc-normal">
+      <IconStyle>
+        <color>ff7e231a</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-1A237E-nodesc-highlight">
+      <IconStyle>
+        <color>ff7e231a</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-1A237E-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-1A237E-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-1A237E-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-4E342E-nodesc-normal">
+      <IconStyle>
+        <color>ff2e344e</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-4E342E-nodesc-highlight">
+      <IconStyle>
+        <color>ff2e344e</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-4E342E-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-4E342E-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-4E342E-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-558B2F-normal">
+      <IconStyle>
+        <color>ff2f8b55</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-558B2F-highlight">
+      <IconStyle>
+        <color>ff2f8b55</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-558B2F">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-558B2F-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-558B2F-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-673AB7-normal">
+      <IconStyle>
+        <color>ffb73a67</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-673AB7-highlight">
+      <IconStyle>
+        <color>ffb73a67</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-673AB7">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-673AB7-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-673AB7-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-757575-normal">
+      <IconStyle>
+        <color>ff757575</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-757575-highlight">
+      <IconStyle>
+        <color>ff757575</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-757575">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-757575-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-757575-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-757575-nodesc-normal">
+      <IconStyle>
+        <color>ff757575</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-757575-nodesc-highlight">
+      <IconStyle>
+        <color>ff757575</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-757575-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-757575-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-757575-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-795548-nodesc-normal">
+      <IconStyle>
+        <color>ff485579</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-795548-nodesc-highlight">
+      <IconStyle>
+        <color>ff485579</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-795548-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-795548-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-795548-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-7CB342-nodesc-normal">
+      <IconStyle>
+        <color>ff42b37c</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-7CB342-nodesc-highlight">
+      <IconStyle>
+        <color>ff42b37c</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-7CB342-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-7CB342-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-7CB342-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-817717-normal">
+      <IconStyle>
+        <color>ff177781</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-817717-highlight">
+      <IconStyle>
+        <color>ff177781</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-817717">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-817717-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-817717-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-817717-nodesc-normal">
+      <IconStyle>
+        <color>ff177781</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-817717-nodesc-highlight">
+      <IconStyle>
+        <color>ff177781</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-817717-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-817717-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-817717-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-880E4F-normal">
+      <IconStyle>
+        <color>ff4f0e88</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-880E4F-highlight">
+      <IconStyle>
+        <color>ff4f0e88</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-880E4F">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-880E4F-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-880E4F-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-880E4F-nodesc-normal">
+      <IconStyle>
+        <color>ff4f0e88</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-880E4F-nodesc-highlight">
+      <IconStyle>
+        <color>ff4f0e88</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-880E4F-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-880E4F-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-880E4F-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-9C27B0-normal">
+      <IconStyle>
+        <color>ffb0279c</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-9C27B0-highlight">
+      <IconStyle>
+        <color>ffb0279c</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-9C27B0">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-9C27B0-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-9C27B0-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-9C27B0-nodesc-normal">
+      <IconStyle>
+        <color>ffb0279c</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-9C27B0-nodesc-highlight">
+      <IconStyle>
+        <color>ffb0279c</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-9C27B0-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-9C27B0-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-9C27B0-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-A52714-normal">
+      <IconStyle>
+        <color>ff1427a5</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-A52714-highlight">
+      <IconStyle>
+        <color>ff1427a5</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-A52714">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-A52714-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-A52714-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-A52714-nodesc-normal">
+      <IconStyle>
+        <color>ff1427a5</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-A52714-nodesc-highlight">
+      <IconStyle>
+        <color>ff1427a5</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-A52714-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-A52714-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-A52714-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-BDBDBD-normal">
+      <IconStyle>
+        <color>ffbdbdbd</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-BDBDBD-highlight">
+      <IconStyle>
+        <color>ffbdbdbd</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-BDBDBD">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-BDBDBD-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-BDBDBD-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-BDBDBD-nodesc-normal">
+      <IconStyle>
+        <color>ffbdbdbd</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-BDBDBD-nodesc-highlight">
+      <IconStyle>
+        <color>ffbdbdbd</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-BDBDBD-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-BDBDBD-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-BDBDBD-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-E65100-nodesc-normal">
+      <IconStyle>
+        <color>ff0051e6</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-E65100-nodesc-highlight">
+      <IconStyle>
+        <color>ff0051e6</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-E65100-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-E65100-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-E65100-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-F9A825-normal">
+      <IconStyle>
+        <color>ff25a8f9</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-F9A825-highlight">
+      <IconStyle>
+        <color>ff25a8f9</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-F9A825">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-F9A825-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-F9A825-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-F9A825-nodesc-normal">
+      <IconStyle>
+        <color>ff25a8f9</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-F9A825-nodesc-highlight">
+      <IconStyle>
+        <color>ff25a8f9</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-F9A825-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-F9A825-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-F9A825-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-FBC02D-nodesc-normal">
+      <IconStyle>
+        <color>ff2dc0fb</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-FBC02D-nodesc-highlight">
+      <IconStyle>
+        <color>ff2dc0fb</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-FBC02D-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-FBC02D-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-FBC02D-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-FF5252-nodesc-normal">
+      <IconStyle>
+        <color>ff5252ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-FF5252-nodesc-highlight">
+      <IconStyle>
+        <color>ff5252ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-FF5252-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-FF5252-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-FF5252-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-FFD600-normal">
+      <IconStyle>
+        <color>ff00d6ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-FFD600-highlight">
+      <IconStyle>
+        <color>ff00d6ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-FFD600">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-FFD600-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-FFD600-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-FFD600-nodesc-normal">
+      <IconStyle>
+        <color>ff00d6ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-FFD600-nodesc-highlight">
+      <IconStyle>
+        <color>ff00d6ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-FFD600-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-FFD600-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-FFD600-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-FFEA00-normal">
+      <IconStyle>
+        <color>ff00eaff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-FFEA00-highlight">
+      <IconStyle>
+        <color>ff00eaff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-FFEA00">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-FFEA00-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-FFEA00-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-FFEA00-nodesc-normal">
+      <IconStyle>
+        <color>ff00eaff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-FFEA00-nodesc-highlight">
+      <IconStyle>
+        <color>ff00eaff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-FFEA00-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-FFEA00-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-FFEA00-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>Кафе, бары</name>
+      <Placemark>
+        <name><![CDATA[Микрокофейня "ТЧК"]]></name>
+        <description>м.Петроградская, Каменноостровский проспект 18/11 (вход с ул.Мира), мы во дворе за второй аркой в красном домике!</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.3164613,59.9592536,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Займемся кофе</name>
+        <description>м. Горьковская/Чкаловская, Большая Пушкарская, 28</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.3036754,59.9590667,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Бар 76</name>
+        <description>м.Петроградская, Малый проспект ПС, 76</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.3036504,59.9647002,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Verle Garden</name>
+        <description>м.Петроградская, Каменноостровский пр., 25,</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.314405,59.963206,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>COFFEE ROOM</name>
+        <description>м. Горьковская/Петрорадская, Каменноостровский пр., 22</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.3157747,59.9611818,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Кофейня ЭНДИ КОФЕ</name>
+        <description>м.Петроградская, Большой проспект ПС, 106</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.3136461,59.9675286,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Кофейня Бери И Беги</name>
+        <description>м. Чкаловская, Пионерская 55</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.2826202,59.9606497,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Даблби</name>
+        <description>м. Горьковская, Кронверкский пр., 65</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.306154,59.95359,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>КОФЕВАРИМ</name>
+        <description>М. Чкаловская, Чкаловский пр. 11</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.2908639,59.9602708,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>КОФЕВАРИМ</name>
+        <description>М. Петроградская, Ленина ул. 27</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.3020676,59.9633579,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Больше Кофе!</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3204663,59.9545527,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Friendly coffee</name>
+        <description>м.Петроградская, Каменноостровский пр-т д.40 Графика М </description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.3105416999999,59.9662494,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Арт-кафе "Мойдодыр"]]></name>
+        <description>м.чкаловская, Большая Зеленина ул., 2,</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.2954172,59.9593824,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ясли</name>
+        <description>м Горьковскя, ул Маркина, 1</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.3070683,59.9560218,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>КЛЕVER</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.2898583,59.9626932,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[PITA'S]]></name>
+        <description>м.Петроградская, наб. Карповки, 10</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.312371,59.967776,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Момо</name>
+        <description>м.Петроградская, Каменноостровский пр., 40</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.310635,59.966231,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Waffle Works</name>
+        <description>м.Петроградская,Аптекарский проспект д.4,1этаж ContourFamily</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.3183067,59.9697201,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Coffee 3</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3182429999999,59.969601,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Тайм-кафе "Mañana" | "Маньяна" ]]></name>
+        <description>Лахтинская ул., 25</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.2972192,59.9639945,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Цветочная Кофейня "НД.Про.Flowers"]]></name>
+        <description>мЧкаловская, Чкаловский пр.52</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.301257,59.96777,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ôpetit: десерты и настроение</name>
+        <description>ул. Блохина 23. (3 минуты от м. Спортивная).</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.2979163,59.9521275,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>I Believe bar</name>
+        <description>м. Спортивная, Зверинская улица, дом 2/5</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.2933855,59.953475,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Вкусные Штучки - кондитерская Кирилла Виноградова</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.293556,59.954911,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Боб и Лист</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.2922298,59.9543631,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Лев и Птичка</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.2974364,59.9563072,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Португальская кофейня Паштейш & Кофе ]]></name>
+        <description>м.Петроградская, ул. Гатчинская д.17 </description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.2994375000001,59.9622724,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Гастробар "Компания"]]></name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.306113,59.967482,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Каледонский лес</name>
+        <description>м.Чкаловская. Петрозаводская ул., 3</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.2927231,59.9632424,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Рюмочная "О, СПОРТ!"]]></name>
+        <description>м.Спортивная/Чкаловская, Большой Пушкарской, дом 5.</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.2980489,59.9551628,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>БРАТЬЯ РАЙТ</name>
+        <description>Петроградская, ул. Чапаева, д 28, офис 10 </description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.330549,59.965759,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Хакспейс - Вега</name>
+        <description>ул. Воскова д.7 (Горьковская / Чкаловская)</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.3049751999999,59.9575483,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Brave Goodies - Брутальные Десерты</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.2947848,59.950218,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Пончкофф</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.307084,59.957921,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Пончкофф</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3044065,59.9652763,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Пончкофф</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.307084,59.957921,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Антикафе 404</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.306841,59.971488,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Postscriptum</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3110818,59.9657377,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Черный лес</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3048315,59.9585155,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Антикафе 3 Этаж</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.323163,59.958132,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[На Вина! Бар & Шоп]]></name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3060758,59.95359,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Кройцберг Кебаб</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3082215,59.9554648,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Булочная Ф. Вольчека № 13</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3075317,59.9576883,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Булочная Ф. Вольчека № 32</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3022556,59.9634745,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Булочная Ф.Вольчека № 33</name>
+        <description>Приятный вид из окна, два зала, меньше людей, чем в булочной рядом с метро.</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.2881479,59.958682,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Булочная Ф. Вольчека № 37</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.2981852,59.9607359,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[PITA'S]]></name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3183517,59.9569266,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HI-HAT</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3182429999999,59.969601,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Coffee Racer</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3068393999999,59.9553896,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Грузинское кафе Мадлобели
+
+</name>
+        <description>https://www.restoclub.ru/spb/place/madlobeli</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.3053327,59.9591577,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Такояки-мисэ
+
+</name>
+        <description>https://www.restoclub.ru/spb/place/takojaki-misje</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.3031475,59.9547946,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Вкусно.ru - пекарня-кондитерская</name>
+        <description>булочки со сливками, торты, выпечка, хлеб</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.3306881,59.95621,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Кафе Барвинок</name>
+        <description><![CDATA[Ул. Мира 7.<br>Это - достояние Петроградского района) Здесь можно очень вкусно поесть.]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.3153509,59.9592886,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Кафе Кварели</name>
+        <description>Кафе грузинской кухни. Всем советую!</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.3043002,59.9550103,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Китайское кафе Десятка</name>
+        <description>Исключительно аутентичное, полусекретное китайское кафе.</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.296452,59.9555528,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Кафе Снежинка</name>
+        <description>Снежинка, старейшее заведение Ленинграда-Петербурга. Примерно с 60-х, 70-х годов открыто. Оч приятное место.</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.3015375,59.963142,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Кафе 16 век</name>
+        <description><![CDATA[Очень странное, но прикольное место!<br>Теоретически, это место можно объявить местом силы ;)]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.3063762,59.9588508,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Пивной бар Breaking Bad</name>
+        <description><![CDATA[Только пиво! <br>Атмосферный барчик, находится в атмосферном угловом помещении, возле не менее атмосферного сквера.]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.3027391,59.9508792,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Кафе Коммуналка</name>
+        <description>Можем ли мы обойти вниманием Коммуналку? Нет. Не можем.</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.3059953,59.9533745,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>The Pub</name>
+        <description>Настоящее локальное место.</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.2931207,59.9567104,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Камчатка</name>
+        <description>Место силы</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.3010547,59.9520449,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>кафе Mashita </name>
+        <description>Очень правильное корейское заведение. Вкусно, сытно и остро!</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.3106678,59.9659184,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Бар Botanique</name>
+        <description>Бар на крыше. По расположению, можно сказать, это полусекретное место (не так просто найти).</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.3176361,59.9685174,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Рест Марлен & магазин Кулинария]]></name>
+        <description>При ресторане Марлен есть продуктовый магазин. И там очень вкусные пирожки и всякая кулинария. Можно рекомендовать. Чай, кофе с собой есть.</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.3046006,59.9600888,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Рюмочная</name>
+        <description>чОткая рюмочная-разливочная со страшно харизматичным барменом. Совсем простое место, но что то в нем есть. Атмосферное что ли...</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.3178775,59.9569709,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kukhmister</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3041554,59.9646595,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Момо</name>
+        <description>домашние пельмени, вареники, равиолли. Можно покупать замороженные домой</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.310917,59.9662347,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Barmaley Bar</name>
+        <description>лучший выбор пива - и разливное, и бутылочное</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.3071729,59.9635669,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Столовая </name>
+        <description>лучшая столовая на свете - свежее, вкусное, недорогое. Но в обед всегда очереди</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.315316,59.9610811,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Шаверма на 4 балла из 5</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.307566,59.969316,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Doner Bar</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3180202999999,59.9687018,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Шаверма на 4 из 5 </name>
+        <description>есть вегетарианская</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.31256,59.956919,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>кафе Восточная кухня</name>
+        <description>лучшая шаверма на районе</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.295102,59.9543202,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Espresso</name>
+        <description>милая кофейня</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.326832,59.955013,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Вегетарианский ресторан Go To Health 
+</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.306358,59.95389,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Бар 8</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3098928,59.9597766,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Ресторан "Тайка"]]></name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.2857772,59.9641876,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Кафе Быстрого Питания Greenbox</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.2925169,59.95411,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Стрит-фуд бар Frank</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3031965,59.9596312,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Бюро</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.2975061,59.9581715,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Репин Бар</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.308574,59.962552,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PROVIANT</name>
+        <description>Ресторан северной кухни</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.3142533,59.9779263,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Балканский гурман</name>
+        <description>ресторан сербской кухни. все отлично!</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.3174967,59.962119,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Шаурма и фалафель</name>
+        <description>Всегда много людей, потому что вкусно. Делают несколько видов фалафеля! Работают до поздна, если не 24 часа. </description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.2943493,59.9598902,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ватрушка</name>
+        <description>Недорогая и вкусная выпечка, скидки после 21:00.</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.2901401,59.9622537,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Хинкальная Хачапурная</name>
+        <description><![CDATA[<img src="https://lh4.googleusercontent.com/mykisRpMjoeu40VAtuQfwcwLoGe1JqJSeUk2K8iepnT7lAnfLsBGpYCTddqvDB7t9nO2rgupYdF9aEg31HiMQhSnYJXpPq11DinKqYdUxWPhYZn9EjZ1wMWjT_WxElgW" height="200" width="auto" /><br><br>Вкусно, приятная атмосфера ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh4.googleusercontent.com/mykisRpMjoeu40VAtuQfwcwLoGe1JqJSeUk2K8iepnT7lAnfLsBGpYCTddqvDB7t9nO2rgupYdF9aEg31HiMQhSnYJXpPq11DinKqYdUxWPhYZn9EjZ1wMWjT_WxElgW</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            30.2972339,59.9583419,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BARVIN</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.2963915,59.9563738,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>шаверма на 4 из 5</name>
+        <description>есть вегетарианская</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.3278178,59.9555286,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>ДоМод</name>
+        <description><![CDATA[Кофейня, находится в Доме мод. Изначально кофейню открыл Николай Готко ("БольшеКофе!" и "Кофе на кухне", но сейчас она принадлежит другим людям. Сделана по типу других кофеен сети. ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.3115046,59.9665279,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Рюмочная</name>
+        <description>Суровое место. Всем рекомендую ;) пропустить 50 гр. там.</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.3121591,59.9587165,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Рюмочная при ресте Демьянова уха</name>
+        <description>У заведения жесткий интерьер. Но здесь можно вкусно съесть большую тарелку вкусного супа с жирными беляшами. И выпить 50 гр.</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.3080687,59.9553446,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Чито Гврито</name>
+        <description><![CDATA[Прекрасная хачапурная! <br>Также кафе. И поесть можно, и выпить. И выпечку с собой купить.]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.2951646,59.9598364,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Пирожки на 10 баллов из 10</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3070092,59.9692422,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Any.Pasta.Pizza bar</name>
+        <description>Идеально подходит для шумных посиделок с друзьями!</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.3069288,59.9610583,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Хворост</name>
+        <description>Пекарня и кофейня</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.303061,59.96703,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Do Eat</name>
+        <description>Вкусно. Большой выбор вина и пива.</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.2982672000001,59.9613784,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Рында
+</name>
+        <description>Культовое место яхтсменов Санкт-Петербурга, легендарные беляши расходятся до 13 00!</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.2419335,59.964055,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Павильон с вкусным кофе</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.2984905,59.9711483,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Кофейня БАРИСТОКРАТ</name>
+        <description>https://vk.com/baristokrat</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.3060608999999,59.9577095,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Макаронники</name>
+        <description>Хороший итальянский ресторан. Зимой тепло и уют, летом - терраса и вид</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.2945241,59.950036,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Кофейня # 13</name>
+        <description><![CDATA[Маленькая демократичная кофейня и кондитерская. Халвичный кофе, иван-чай  и облепиховый чай.  Специалитет - большой выбор лукумов! И для несладкоежек - отличные сэндвичи!                                             Кофейня N13<br>улица Петрозаводская 13 (Барочная)<br>197110, Санкт-Петербург]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.2881693,59.9657573,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HOOKAH BOX AVIATOR</name>
+        <description><![CDATA[Атмосферный ресторан-кальянная в антураже американской боевой авиации середины прошлого века. Суши-бурито, суши, крем-супы, десерты, бутылочное пиво, вина, коктейли, также чаи на выбор, безалкогольные холодные напитки и, конечно, дымные кальяны. Есть настолки. Персонал приветлив и внимателен. <br><br>Столик лучше заказывать заранее и так же заранее зарегистрироваться на сайте, чтобы вам успел прийти код (без кода попасть внутрь проблематично).<br><br>Вход в заведение через красную телефонную будку, только тс-с :)]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.3036581,59.9595129,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Культурные проекты</name>
+      <Placemark>
+        <name><![CDATA[Арт-ресторан "новый эстрадный театр"]]></name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3156711,59.965223,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Монетный двор</name>
+        <description>м.горьковская, Петропавловская крепость, д. 6, лит. А</description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
+        <Point>
+          <coordinates>
+            30.313975,59.94923,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Театр имени Андрея Миронова</name>
+        <styleUrl>#icon-1899-BDBDBD-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.312929,59.9659445,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Дом-музей Ф. И. Шаляпина</name>
+        <styleUrl>#icon-1899-4E342E-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3050214,59.974057,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Мастерская М. К. Аникушина, филиал Государственного музея городской скульптуры</name>
+        <styleUrl>#icon-1899-0F9D58-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.2969860000001,59.973207,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Котельная Камчатка</name>
+        <styleUrl>#icon-1899-0097A7-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3008589999999,59.952006,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Мюзик Холл</name>
+        <styleUrl>#icon-1899-BDBDBD-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3106723999999,59.9552903,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Государственный музей политической истории России</name>
+        <styleUrl>#icon-1899-7CB342-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3247135,59.9545898,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Театр поколений</name>
+        <styleUrl>#icon-1899-BDBDBD-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.2972192,59.9639945,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Театр "Особняк"]]></name>
+        <styleUrl>#icon-1899-BDBDBD-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.306607,59.97173,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Музей петербургского авангарда</name>
+        <description>м.Петроградская, Профессора Попова ул., 10</description>
+        <styleUrl>#icon-1899-BDBDBD</styleUrl>
+        <Point>
+          <coordinates>
+            30.3123477,59.9708927,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Драматический театр "Остров"]]></name>
+        <styleUrl>#icon-1899-FBC02D-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.313938,59.963064,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Театр-фестиваль «Балтийский дом»</name>
+        <styleUrl>#icon-1899-BDBDBD-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.312451,59.955626,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Государственный музей истории Санкт-Петербурга</name>
+        <styleUrl>#icon-1899-1A237E-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3193937,59.9500484,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Музей космонавтики и ракетной техники имени В. П. Глушко</name>
+        <styleUrl>#icon-1899-BDBDBD-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3214307000001,59.9518166,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>VINCI, театральная гостиная</name>
+        <styleUrl>#icon-1899-01579B-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3062701,59.9601602,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Театр "Лицедеи"]]></name>
+        <styleUrl>#icon-1899-BDBDBD-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3156710000001,59.965223,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Киностудия Ленфильм</name>
+        <styleUrl>#icon-1899-FFD600-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3175446,59.958059,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Военно-исторический Музей артиллерии, инженерных войск и войск связи</name>
+        <styleUrl>#icon-1899-A52714-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.313617,59.954047,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Санкт-Петербургский Музей Игрушки</name>
+        <styleUrl>#icon-1899-BDBDBD-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.300424,59.969833,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Музей сновидений Фрейда</name>
+        <styleUrl>#icon-1899-BDBDBD-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.294393,59.95525,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Дворец культуры имени Ленсовета</name>
+        <styleUrl>#icon-1899-E65100-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.309833,59.966983,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Музей Граммофонов</name>
+        <styleUrl>#icon-1899-BDBDBD-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3128326,59.9637657,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Музей С. М. Кирова</name>
+        <styleUrl>#icon-1899-BDBDBD-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.313799,59.962307,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Театр - студия "Смешарики"]]></name>
+        <styleUrl>#icon-1899-BDBDBD-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3331983,59.9624922,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Санкт-Петербургская соборная мечеть</name>
+        <styleUrl>#icon-1899-BDBDBD-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3239659,59.9551639,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Музей истории фотографии</name>
+        <styleUrl>#icon-1899-BDBDBD-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3124444,59.9714643,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>OfelyArt</name>
+        <description>мастерская</description>
+        <styleUrl>#icon-1899-558B2F</styleUrl>
+        <Point>
+          <coordinates>
+            30.2976791999999,59.9711334,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Музей-квартира Елизаровых</name>
+        <styleUrl>#icon-1899-BDBDBD-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.294967,59.965685,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>ЕСОД, дом еврейской культуры</name>
+        <styleUrl>#icon-1899-817717-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.287156,59.961503,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Нельсон </name>
+        <description>м. Петроградская, ул. Полозова, 6</description>
+        <styleUrl>#icon-1899-BDBDBD</styleUrl>
+        <Point>
+          <coordinates>
+            30.304269,59.962817,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Двор с граффити и гаражами</name>
+        <description>Очень атмосферный двор! Который в принципе легко может быть объектом современного искусства.</description>
+        <styleUrl>#icon-1899-673AB7</styleUrl>
+        <Point>
+          <coordinates>
+            30.312894,59.9619337,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Театр "Кумкуат"]]></name>
+        <description>https://vk.com/teatr_studia_kumkuat</description>
+        <styleUrl>#icon-1899-BDBDBD</styleUrl>
+        <Point>
+          <coordinates>
+            30.2971038,59.9642033,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Центральная районная библиотека им. А.С. Пушкина</name>
+        <styleUrl>#icon-1899-BDBDBD-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3113069,59.9646312,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Центральная районная детская библиотека</name>
+        <styleUrl>#icon-1899-BDBDBD-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3092383000001,59.9637952,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Библиотека им. В.И. Ленина</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3025216,59.9575718,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Библиотека им. Б. Лавренёва</name>
+        <styleUrl>#icon-1899-FFEA00-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3025599,59.969513,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Юношеская библиотека им. А. П. Гайдара</name>
+        <styleUrl>#icon-1899-BDBDBD-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.2946389,59.95526,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>3-я районная библиотека</name>
+        <styleUrl>#icon-1899-795548-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.32821,59.952419,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>2-я детская библиотека</name>
+        <styleUrl>#icon-1899-097138-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3060139,59.95335,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Библиотека Кировских островов</name>
+        <styleUrl>#icon-1899-006064-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.260761,59.973541,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Образовательные проекты</name>
+      <Placemark>
+        <name>ЧГК ЛЭТИ </name>
+        <description>Санкт-Петербургский государственный электротехнический университет</description>
+        <styleUrl>#icon-1899-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            30.3224839,59.9723393,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Международный общественный фонд культуры и образования</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.2909863,59.9649432,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Клуб соседей и шахмат/Шахматный клуб "На Петроградской стороне" ]]></name>
+        <description>Ординарная ул., 16</description>
+        <styleUrl>#icon-1899-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            30.305114,59.966566,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Дом Бенуа</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3138996,59.9619577,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Клуб робототехники </name>
+        <description>пр. Медиков, 3</description>
+        <styleUrl>#icon-1899-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            30.315593,59.969304,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Игры ума в "О,СПОРТ!"]]></name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.2980489,59.9551628,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Курсы Испанского языка Sin Límites </name>
+        <description>Кронверкская ул., 29</description>
+        <styleUrl>#icon-1899-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            30.311103,59.962569,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Миры увлечений образовательное пространство</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.318088,59.968942,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Family English| курсы английского в СПб </name>
+        <description>Корпусная ул., 9</description>
+        <styleUrl>#icon-1899-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            30.288078,59.96278,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>ТЕТРА, учебный центр</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.2871851,59.9636005,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Образовательный центр Дом Бенуа</name>
+        <description>м. Петрорадская, Каменноостровский пр., 26-28 (вход во дворе) </description>
+        <styleUrl>#icon-1899-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            30.3138649,59.961986,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>OpenMe - Квесты в реальности</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.294427,59.957808,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Университет ИТМО</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3081695999999,59.9572339,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Точка Кипения Санкт-Петербург</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.315593,59.969304,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Language Profi School</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.313772,59.959106,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Дискуссионный клуб "ПЕТРОГРАД"]]></name>
+        <description>м.Петроградская. ул. Профессора Попова, 23</description>
+        <styleUrl>#icon-1899-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            30.31256,59.971269,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Учебный центр «Петербургский фотограф»</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.2942419999999,59.9622,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Студенческий городок университета ИТМО</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3021867,59.9725671,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Курсы немецкого языка DAZ</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.31316,59.958152,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parabola, международный центр по изучению иностранных языков</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.31256,59.971269,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ай Класс</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.29043,59.953984,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Квесты "QuestQuest" Санкт-Петербург - FRIDA с актером]]></name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.285693,59.96476,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Центр Эмоционально-смыслового Обучения</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3251909000001,59.957229,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Учебный центр SunDay</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.304506,59.966289,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Центр обучения за рубежом Students International</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3103138,59.9738341,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Образовательный центр Вадима Куркина</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3076153,59.9667661,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Общество граждан сирийского происхождения</name>
+        <styleUrl>#icon-1899-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3028072,59.9514105,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Учебная верфь исторического судостроения «Штандарт»</name>
+        <description><![CDATA[<img src="https://lh5.googleusercontent.com/hMPLyyjE7-ZD47nrZuOZuWLAwmEShIUdKps9wNOn5WNyZsYnA-YoNLtG0WZoCHFafdIxONN5_Py6n2Jw_3j6ofYbzYcBjwxVlLJ1up4U1aM2pmLJRCN5Q0smncR8i-1l" height="200" width="auto" /><br><br>Корабельная верфь и обучение работе в гичке — быстроходной парусно-гребной шлюпке. ]]></description>
+        <styleUrl>#icon-1899-9C27B0</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh5.googleusercontent.com/hMPLyyjE7-ZD47nrZuOZuWLAwmEShIUdKps9wNOn5WNyZsYnA-YoNLtG0WZoCHFafdIxONN5_Py6n2Jw_3j6ofYbzYcBjwxVlLJ1up4U1aM2pmLJRCN5Q0smncR8i-1l</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            30.2449753999999,59.9637482,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>illustratiON студия рисования</name>
+        <description><![CDATA[<img src="https://lh3.googleusercontent.com/g_Gdxw9qkBYTxUNe9IVLIld_zocbezIRGBzRGhRrIcRNRR7zrd4s0pCAzgrRKyPser_yCk5evoylLyjVxCxSuePcFkdRjJgnTkj9F044JjjrqsLfvyN_9OHtublQd0jG" height="200" width="auto" /><br><br>Курсы леттеринга и каллиграфии, курсы иллюстрации, студия рисования, мастер-классы по живописи, мастер-классы по каллиграфии. ]]></description>
+        <styleUrl>#icon-1899-9C27B0</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh3.googleusercontent.com/g_Gdxw9qkBYTxUNe9IVLIld_zocbezIRGBzRGhRrIcRNRR7zrd4s0pCAzgrRKyPser_yCk5evoylLyjVxCxSuePcFkdRjJgnTkj9F044JjjrqsLfvyN_9OHtublQd0jG</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            30.2939549,59.962315,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Магазины</name>
+      <Placemark>
+        <name>Живинатурально.ру</name>
+        <styleUrl>#icon-1899-757575-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.314753,59.967198,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CODE7</name>
+        <styleUrl>#icon-1899-757575-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3142780000001,59.95952,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Эко-лайт</name>
+        <styleUrl>#icon-1899-757575-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3249218,59.9622942,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Спасибо!</name>
+        <styleUrl>#icon-1899-757575-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.2884013,59.9589722,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Экотопия</name>
+        <description>м. Спортивная, ул. Пионерская, д. 2</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+        <Point>
+          <coordinates>
+            30.2963501,59.9550054,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Фруктовая Лавка</name>
+        <styleUrl>#icon-1899-757575-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3095042,59.9699849,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>VapeCoastCustoms</name>
+        <description>Магазин жидкостей для электронных сигарет, где в подарок обслуживают девайсы и ставят ровные намотки.</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+        <Point>
+          <coordinates>
+            30.3013256,59.9626882,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Эко Био Маркет Organica</name>
+        <styleUrl>#icon-1899-757575-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.2925115,59.9532827,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CULTSOME</name>
+        <styleUrl>#icon-1899-757575-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3153138,59.9638394,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Кулинарный Дом Кухмистер</name>
+        <description>Кулинария-кондитерская ресторанного уровня. Домашние пельмени, свежая выпечка,  большой выбор натуральных и органических продуктов, итальянских сыров и деликатесов. Демократичные цены, приятный персонал, уютная атмосфера для работы и встреч. Скидка 20% на всю выпечку и хлеб после 20.00! </description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+        <Point>
+          <coordinates>
+            30.2989197,59.965175,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LAB Store</name>
+        <description><![CDATA[<img src="https://lh6.googleusercontent.com/vrmPwc8KvuoLHkMLxUkquHb7xCoJK6wRh1dHnMpziy8jbaekDH01MF9oFLl0NJrpwm67Vrv-iFGfCJUKmgaf9PVpUAHbdYcExGBsQE63Htq1cHyxQjEnT2-6YFtoQ3Ki" height="200" width="auto" /><br><br>Магазин женской одежды Санкт-Петербургских дизайнеров. <br>тел.: 8-911-0034640<br>открыты каждый день с 11:00 до 21:00<br><br><img src="https://lh3.googleusercontent.com/od06LX-pr-XWgJ8X4YGu5x-E9STjCTOwhlmvFtNligSNNtKjDoH2a-17wkmo8Ei3GHEOGG7ZY8kIm9mL0Xr7IstawZ_y6ypZBLZiHZaqxNouDHEezU6JQvDKS-sdXe23" height="200" width="auto" /><br><br><img src="https://lh5.googleusercontent.com/9SUNXPY76PH5GqZztazpeFy_quCDAqWJ6cypYCatuVi-BBYAA5I6FDheOXRchVC9LLd5-56nWcE-PScaynNFAZwJ8EEroWyuepk4LuCwlyt1sKWryPdJApj-tDf8PGFC" height="200" width="auto" /><br><br><img src="https://lh4.googleusercontent.com/cYcq1YfabE9o5jPboY_BmfYsiBrOuhlQA7AFgNn-why1LtdVSqr0xplHsv8vnRn794hsD06ypsER9iWOIpens5cDKcjT-VS1mB9k-d6qrzzH30_NbrUgvagZmn8LasRD" height="200" width="auto" />]]></description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh6.googleusercontent.com/vrmPwc8KvuoLHkMLxUkquHb7xCoJK6wRh1dHnMpziy8jbaekDH01MF9oFLl0NJrpwm67Vrv-iFGfCJUKmgaf9PVpUAHbdYcExGBsQE63Htq1cHyxQjEnT2-6YFtoQ3Ki https://lh3.googleusercontent.com/od06LX-pr-XWgJ8X4YGu5x-E9STjCTOwhlmvFtNligSNNtKjDoH2a-17wkmo8Ei3GHEOGG7ZY8kIm9mL0Xr7IstawZ_y6ypZBLZiHZaqxNouDHEezU6JQvDKS-sdXe23 https://lh5.googleusercontent.com/9SUNXPY76PH5GqZztazpeFy_quCDAqWJ6cypYCatuVi-BBYAA5I6FDheOXRchVC9LLd5-56nWcE-PScaynNFAZwJ8EEroWyuepk4LuCwlyt1sKWryPdJApj-tDf8PGFC https://lh4.googleusercontent.com/cYcq1YfabE9o5jPboY_BmfYsiBrOuhlQA7AFgNn-why1LtdVSqr0xplHsv8vnRn794hsD06ypsER9iWOIpens5cDKcjT-VS1mB9k-d6qrzzH30_NbrUgvagZmn8LasRD</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            30.3137255,59.9571965,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Яркий фотомаркет
+</name>
+        <description><![CDATA[<img src="https://lh5.googleusercontent.com/3lklUNOJD2hBhZFe5vHEzNmhHxraMW7DmCj_yOyB5P1b_fhm2IH7u9tgv_GkrhZ2R9MId4buLrG1wEZkhWUMPgWMt-irSgFFKsGtDOSvlR2_SGrMKoUviYf2wPtd4W4N" height="200" width="auto" /><br><br>Фотомагазин. Фотокамеры, аксессуары, печать фотографий, фотосувениры, фото на документы и тд.]]></description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh5.googleusercontent.com/3lklUNOJD2hBhZFe5vHEzNmhHxraMW7DmCj_yOyB5P1b_fhm2IH7u9tgv_GkrhZ2R9MId4buLrG1wEZkhWUMPgWMt-irSgFFKsGtDOSvlR2_SGrMKoUviYf2wPtd4W4N</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            30.3192294,59.9575295,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Яркий фотомаркет
+</name>
+        <description><![CDATA[<img src="https://lh5.googleusercontent.com/TqVv1Gw9Fk6eLPvB3JQLibj0wb8b44fBoAT1AJmMCC_7ZF3vC8r_onCiuu2mXUI9KgyE_qf1ja8Mm7XArTPzOWqCfmVFhSNzS-5ykb6xqXi0va2C2UiUvAc-kSunxMm0" height="200" width="auto" /><br><br>Фотомагазин. Фотокамеры и объективы. Фото на документы. Печать фотографий. Копировальные услуги. С 9.00 до 21.00.]]></description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh5.googleusercontent.com/TqVv1Gw9Fk6eLPvB3JQLibj0wb8b44fBoAT1AJmMCC_7ZF3vC8r_onCiuu2mXUI9KgyE_qf1ja8Mm7XArTPzOWqCfmVFhSNzS-5ykb6xqXi0va2C2UiUvAc-kSunxMm0</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            30.3024065,59.9601452,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Хороший магазин фруктов и овощей</name>
+        <styleUrl>#icon-1899-757575-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3006551,59.9516608,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Беларусочка</name>
+        <description>Белорусские товары — хлеб, молочные продукты, шоколад. </description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+        <Point>
+          <coordinates>
+            30.2896161,59.962458,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wonderliz
+</name>
+        <description><![CDATA[магазин женской одежды<br>8800 550 13 48]]></description>
+        <styleUrl>#icon-1549-FF5252</styleUrl>
+        <Point>
+          <coordinates>
+            30.3064647,59.9641061,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Арт-пространства</name>
+      <Placemark>
+        <name>Зверинец
+</name>
+        <description>Кибер-коливинг</description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            30.303179,59.9520449,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Лофт Contour Family</name>
+        <description>м. Петроградская,Аптекарский пр., 4</description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            30.3181052,59.9696026,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KOKON Space — арт-пространство</name>
+        <description>м. Петроградская, Каменноостровский, 38, код 77, 3 этаж</description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            30.311187,59.965806,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>КЛАСС ТРУДА - мастерская для работы и творчества</name>
+        <description>м. Петроградская, Газовая 10, 1 этаж, газгольдер</description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            30.2934319,59.9676099,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>«Бисквит» — Студия керамики</name>
+        <description><![CDATA[<img src="https://lh4.googleusercontent.com/n4ld1jIy_CzpecgYDrK7ygtHI6GxQv4mIM1pFEBuBOmvZTRCMFwFDH-w-VHI9GT17TAdXLd9nL5tzhgK4hX1tcWcJ5mKp2YvUeWpBqIjufpDDoaPRqKkouSCWJ0SPyl2zg" height="200" width="auto" /><br><br>м.Спортивная, ул. Зверинская, 13<br><br><img src="https://lh6.googleusercontent.com/EiLvdnTw8JkCvjq7AKH7C9nKa61TVADhxYpc2IZFa88n_WJ79ywr2nO85jJ0I0T268-Ym5bVo1zBypJSBeNhKL5Q45DOPRZwzpk4oVAMsMdOxqdqRdPDB1yGGMYm2Lf-" height="200" width="auto" />]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh4.googleusercontent.com/n4ld1jIy_CzpecgYDrK7ygtHI6GxQv4mIM1pFEBuBOmvZTRCMFwFDH-w-VHI9GT17TAdXLd9nL5tzhgK4hX1tcWcJ5mKp2YvUeWpBqIjufpDDoaPRqKkouSCWJ0SPyl2zg https://lh6.googleusercontent.com/EiLvdnTw8JkCvjq7AKH7C9nKa61TVADhxYpc2IZFa88n_WJ79ywr2nO85jJ0I0T268-Ym5bVo1zBypJSBeNhKL5Q45DOPRZwzpk4oVAMsMdOxqdqRdPDB1yGGMYm2Lf-</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            30.2968889,59.9530141,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Мансарда Художников Народная галерея</name>
+        <description><![CDATA[<img src="https://lh4.googleusercontent.com/JZjWAsHZBWkjA3MdzYo_BMe2TLhL2P8_7DFWRKBLW2JQcq6DBu00x3Dc4FG0VbPRKgpsOqVV_sFfzaQufaj_6u7IwGQqQQ-Ig2gQaDgkgM7GBobzpcIJIwe4uOeMpg8" height="200" width="auto" /><br><br>У Картинной галереи «Мансарда Художников» многолетняя и богатая событиями история.<br>Осознание необходимости создания демократичной галереи, открытой для всех художников, пришло к основателям будущей «Мансарды Художников еще в прошлом веке, в 1997 году.<br>Было много споров и сомнений в жизнеспособности подобного арт-проекта. И наконец, зимой 2001 года, идея создания галереи, не имеющей аналогов в Санкт-Петербурге, была окончательно сформирована.<br>Но официально Днем рождения нашего арт-пространства можно назвать 18 мая 2001 года, именно в этот по-весеннему солнечный день галерея открыла свои двери для посетителей и художников в мансарде старинного дома на Петроградской стороне.<br>В чем же уникальность «Мансарды Художников»?<br>На протяжении всего существования мы открыты к сотрудничеству с любыми художниками, как профессиональными и именитыми, так и молодыми, только начинающими свою творческую карьеру. В 2005 году в рамках ежегодного международного фестиваля «Мастер-Класс» Картинная галерея «Мансарда Художников» была удостоена почетного звания «Народной» за свою лояльную политику по отношению к авторам и доступные, порой действительно «народные», цены.<br>Именно эта политика и позволила собрать в стенах галерейного пространства такую богатую и разнообразную коллекцию авторских картин не только петербургских художников, но авторов из других городов России и зарубежья.<br>Именно поэтому к нам приходят многие наши посетители из года в год, зная точно, что у нас обязательно найдется та самая единственная картина, которая будет радовать их дома. Именно поэтому нас рекомендуют друзьям и знакомым.<br>За эти годы много, что изменилось, например, «Мансарда Художников» уже не на чердаке. В 2004 году мы спустились на первый этаж, чтобы быть ближе и доступнее как покупателям, так и авторам. А позже и вовсе переехали в другое здание, на Большую Пушкарскую-10, в Лофт «Светоч».<br>Но неизменна наша открытость по отношению ко всем художникам, наши запасники полны самых разнообразных картин, все их можно увидеть в электронном каталоге на сайте галереи. Для удобства посетителей мы открыли свою багетную мастерскую и гордимся качеством изготавливаемых рам.<br>И еще, мы все также на нашей любимой Петроградке.<br><br><img src="https://lh6.googleusercontent.com/5GHsf7oe699emWMAvWzojMtazrUM0d5KuY--zjDaERr4nf-rS8bSNs5hwCJ3vSgooETD32A3LOrLxrczkveosLV9GmvrWejsyAII9e2zeFSZnOqHiHBNFAHjrjzPnIM6bw" height="200" width="auto" /><br><br><img src="https://lh5.googleusercontent.com/G61_s45H6zsO90t6zRwGnNZ3Y-6uvH1EhuIvSuhGE7vnPvMMpLuxykukFaDZNTrAfGaN34mv-hzj0vfT5aBchJtZ7OwiZXBofuhn714yRcflD8eUInzupR-h6jNCcNtSKg" height="200" width="auto" /><br><br><img src="https://lh6.googleusercontent.com/_wOnpa4Pmtc_N_Uf4WhMjva5earpRDwY10PsMbAZ8eSNIp4RGBbw8dQr0k0IN2HTZAw0LkJeY9jmgo-Vy-jVOS50gs6haImeRfXmDa_5SXRyfr_0nlAX5BKJGyLRbOQ" height="200" width="auto" /><br><br><img src="https://lh3.googleusercontent.com/PGk14tBK4zqWhFjBQfG9KrwgaA82iZmyb7PUnR7_obTKKrNfxR8Ttr97SSxTaY5YVNKQnDiC4se7u4Wxwm_oRwO4xpMXq-JC2B2rTH0E8D8JhR6AfOg-OQGuRYQGkXWR" height="200" width="auto" />]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh4.googleusercontent.com/JZjWAsHZBWkjA3MdzYo_BMe2TLhL2P8_7DFWRKBLW2JQcq6DBu00x3Dc4FG0VbPRKgpsOqVV_sFfzaQufaj_6u7IwGQqQQ-Ig2gQaDgkgM7GBobzpcIJIwe4uOeMpg8 https://lh6.googleusercontent.com/5GHsf7oe699emWMAvWzojMtazrUM0d5KuY--zjDaERr4nf-rS8bSNs5hwCJ3vSgooETD32A3LOrLxrczkveosLV9GmvrWejsyAII9e2zeFSZnOqHiHBNFAHjrjzPnIM6bw https://lh5.googleusercontent.com/G61_s45H6zsO90t6zRwGnNZ3Y-6uvH1EhuIvSuhGE7vnPvMMpLuxykukFaDZNTrAfGaN34mv-hzj0vfT5aBchJtZ7OwiZXBofuhn714yRcflD8eUInzupR-h6jNCcNtSKg https://lh6.googleusercontent.com/_wOnpa4Pmtc_N_Uf4WhMjva5earpRDwY10PsMbAZ8eSNIp4RGBbw8dQr0k0IN2HTZAw0LkJeY9jmgo-Vy-jVOS50gs6haImeRfXmDa_5SXRyfr_0nlAX5BKJGyLRbOQ https://lh3.googleusercontent.com/PGk14tBK4zqWhFjBQfG9KrwgaA82iZmyb7PUnR7_obTKKrNfxR8Ttr97SSxTaY5YVNKQnDiC4se7u4Wxwm_oRwO4xpMXq-JC2B2rTH0E8D8JhR6AfOg-OQGuRYQGkXWR</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            30.2982036999999,59.955682,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Детские проекты</name>
+      <Placemark>
+        <name>Elfant и Кидерия</name>
+        <description>м.чкаловская/спортивная, ПС Большой пр. 13/4</description>
+        <styleUrl>#icon-1899-F9A825</styleUrl>
+        <Point>
+          <coordinates>
+            30.2953406,59.9552059,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Архитектура будущего</name>
+        <description>Центр психологического развития и обучения детей и подростков </description>
+        <styleUrl>#icon-1899-F9A825</styleUrl>
+        <Point>
+          <coordinates>
+            30.3068404000001,59.9553944,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Садик Академика</name>
+        <description>м.горьковская, Кронверкская ул. 16</description>
+        <styleUrl>#icon-1899-F9A825</styleUrl>
+        <Point>
+          <coordinates>
+            30.3111269999999,59.960482,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Академия танца Бориса Эйфмана </name>
+        <description>Большая Пушкарская ул., 14</description>
+        <styleUrl>#icon-1899-F9A825</styleUrl>
+        <Point>
+          <coordinates>
+            30.29921,59.956422,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>РОББО Клуб</name>
+        <styleUrl>#icon-1899-F9A825-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.315775,59.9702069,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA["АСМ-Арт" интерактивный детский театр]]></name>
+        <styleUrl>#icon-1899-F9A825-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.287004,59.9614652,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Мастер-классы своими руками для детей</name>
+        <description>м.чкаловская, ул Большая Зеленина 8, БЦ Чкаловский </description>
+        <styleUrl>#icon-1899-F9A825</styleUrl>
+        <Point>
+          <coordinates>
+            30.294569,59.95976,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Котофей</name>
+        <description>м.горьковская/чкаловская, Большая Пушкарская, д.20</description>
+        <styleUrl>#icon-1899-F9A825</styleUrl>
+        <Point>
+          <coordinates>
+            30.3016547,59.9577515,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Дворец творчества</name>
+        <description>м.петроградская, Каменноостровский пр., 36/73</description>
+        <styleUrl>#icon-1899-F9A825</styleUrl>
+        <Point>
+          <coordinates>
+            30.3117351,59.9649649,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Садик Sun school</name>
+        <description>м.горьковская, Дивенская ул., д.11</description>
+        <styleUrl>#icon-1899-F9A825</styleUrl>
+        <Point>
+          <coordinates>
+            30.3243534000001,59.9606178,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Улица времени, детский исторический музей</name>
+        <styleUrl>#icon-1899-F9A825-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3187325,59.9501951,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Школа "Апельсин"]]></name>
+        <description>http://apelsino.com/</description>
+        <styleUrl>#icon-1899-F9A825</styleUrl>
+        <Point>
+          <coordinates>
+            30.3182429999999,59.969601,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Крошка Ру</name>
+        <styleUrl>#icon-1899-F9A825-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3273830000001,59.955816,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Спортивные проекты</name>
+      <Placemark>
+        <name>Школа танцев, фитнеса и растяжки STUDIO 17</name>
+        <description><![CDATA[м.Чкаловская, Ораниенбаумская ул., 29 (здание БЦ "Печатный двор" (3 этаж)]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
+        <Point>
+          <coordinates>
+            30.2952423,59.9617204,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Студия танцев IPANEMA</name>
+        <description><![CDATA[м.Чкаловская, Чкаловский пр.,15 , Арт-Центр "Печатный Двор"]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
+        <Point>
+          <coordinates>
+            30.2937645,59.9624131,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Скейтпарк на Введенской</name>
+        <styleUrl>#icon-1899-880E4F-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3023828,59.9562549,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Единый Туристический Центр на Петроградке</name>
+        <description>м.петроградская, Большой проспект Петроградской стороны 32/1. </description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
+        <Point>
+          <coordinates>
+            30.2996493,59.9595168,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>АНТИФИТНЕС СПОРТИВНЫЙ КЛУБ</name>
+        <description>м.Петроградская, л. Газовая, 10Ж. 1этаж</description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
+        <Point>
+          <coordinates>
+            30.2936196,59.9674434,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>DANCE PLACE BAZA Cоул Систерс</name>
+        <description>м. чкаловская, Большая Разночинная, 24 (вход под шлагбаум, 2-я парадная справа)</description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
+        <Point>
+          <coordinates>
+            30.2864970000001,59.960502,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Велоклуб "Петроградец"]]></name>
+        <description>Большая Монетная ул., 24</description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
+        <Point>
+          <coordinates>
+            30.32429,59.963073,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Петроградский клуб Кэндо </name>
+        <description>Левашовский пр. 11, с/к Метрострой</description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
+        <Point>
+          <coordinates>
+            30.2899022,59.9666139,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Школа Бальные Танцы Петроградская</name>
+        <description>Большой проспект ПС, 82</description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
+        <Point>
+          <coordinates>
+            30.309002,59.9642587,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Студия ЮНГА/Yunga Studio </name>
+        <description><![CDATA[м. Петроградская, наб. Карповки, 5<br>(вход в коричневую дверь на углу с Аптекарским пр., ориентир - вывеска ГрандОтель Петроградский и Studio 212). По лестнице на самый верх - 5 этаж. "]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
+        <Point>
+          <coordinates>
+            30.3174753000001,59.9681406,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Петроградский клуб туристов</name>
+        <description>м.петроградская, Каменноостровский пр., 42, ДК Ленсовета, ком. 426</description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
+        <Point>
+          <coordinates>
+            30.309833,59.966983,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Школа танцев Pandora</name>
+        <description>м. Чкаловская/Петроградская Чкаловский проспект 15</description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
+        <Point>
+          <coordinates>
+            30.295552,59.9633538,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Танцевальная студия QINETIC Петроградская / Школа танцев / Hip-Hop</name>
+        <description>Съезжинская ул., 34</description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
+        <Point>
+          <coordinates>
+            30.3035580000001,59.954229,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MMDance студия танца</name>
+        <description>м. чкаловская, Большая Разночинная д. 24, 3 этаж,код домофона 30</description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
+        <Point>
+          <coordinates>
+            30.2864970000001,59.960502,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MoreDance - центр танца  </name>
+        <description><![CDATA["Каменноостровский пр. 42, ДК Ленсовета, 4 этаж, 420 зал , напротив метро Петроградская"]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
+        <Point>
+          <coordinates>
+            30.309833,59.966983,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Школа высшего спортивного мастерства</name>
+        <styleUrl>#icon-1899-880E4F-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.2984369000001,59.9813092,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Международная яхтенная школа</name>
+        <description>Северо-западная международная яхтенная школа: курсы капитанов http://yseasons.ru/bareboat-skipper-na-baltike </description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
+        <Point>
+          <coordinates>
+            30.2513266,59.9627607,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Чкаловские Бани</name>
+        <description>Знаменитые Геслеровские бани</description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
+        <Point>
+          <coordinates>
+            30.288553,59.959871,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Summertime Swing School</name>
+        <description>Каменноостровский пр., 12</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.3171198,59.9589046,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Услуги </name>
+      <Placemark>
+        <name>Фотостудия Studio 212</name>
+        <description>Набережная реки Карповки 5 лит. П, Фотостудия, арт-пространство</description>
+        <styleUrl>#icon-1535-FFD600</styleUrl>
+        <Point>
+          <coordinates>
+            30.3176737,59.9684315,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Фотоателье на Чкаловском 17 </name>
+        <description>Чкаловский пр., 17</description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <Point>
+          <coordinates>
+            30.2959323,59.9637817,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bulthaup</name>
+        <styleUrl>#icon-1899-FFEA00-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.2926434,59.9545337,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Юрист </name>
+        <description>м.чкаловская/горьковская/петроградская, Большая Пушкарская 26 офис 5</description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <Point>
+          <coordinates>
+            30.303273,59.958838,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PetrogradWeb</name>
+        <description><![CDATA[м. Петроградская, ОЦ "Дом Бенуа", оф.2, Каменноостровский пр., 26-28]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <Point>
+          <coordinates>
+            30.3144765,59.9622183,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>THINK PRINT</name>
+        <description>м.Чкаловская/Спортивная, ул. Б. Пушкарская 10</description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <Point>
+          <coordinates>
+            30.2809915,59.9559188,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Фотолофт МАЯК </name>
+        <description>Кронверкская ул., 29</description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <Point>
+          <coordinates>
+            30.311103,59.962569,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>FOTO-ONE Service </name>
+        <description>Чкаловский пр., 15</description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <Point>
+          <coordinates>
+            30.2937703,59.9624148,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Марк & Гайвер]]></name>
+        <styleUrl>#icon-1899-FFEA00-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3074439,59.9654348,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Коворкинг "Ясная поляна"]]></name>
+        <description>https://vk.com/coworkingspb</description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <Point>
+          <coordinates>
+            30.3132365,59.965113,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>барбершоп FIRMA</name>
+        <styleUrl>#icon-1899-FFD600-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3027010000001,59.958121,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Chop-Chop Bar</name>
+        <styleUrl>#icon-1899-FFD600-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3104078,59.9645587,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Барбершоп Франт</name>
+        <styleUrl>#icon-1899-FFD600-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.298513,59.963208,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ателье Stitch</name>
+        <description>https://vk.com/sewingcafe</description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <Point>
+          <coordinates>
+            30.3062046,59.957277,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Прачечная Прачка.ком</name>
+        <description>Стирка по очень доступным ценам.  В прачечной можно постирать любые вещи, включая крупногабаритные, такие как пледы, одеяла, чехлы от диванов, пуховики</description>
+        <styleUrl>#icon-1899-FFD600</styleUrl>
+        <Point>
+          <coordinates>
+            30.3279197,59.9638993,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Хозтовары, ремонт техники</name>
+        <description>Есть разные мелочи и бытовые товары, материалы для ремонта. Работают до 20:00.</description>
+        <styleUrl>#icon-1899-FFD600</styleUrl>
+        <Point>
+          <coordinates>
+            30.289776,59.9599572,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Парикмахерская «Две столицы»</name>
+        <description>Недорогая парикмахерская, в зале около 7 мастеров. Очень низкие цены! Стрижки, окрашивание, маникюр и что-то еще. 8 (812) 230-17-83 Работают до 21:00, можно прийти без записи.</description>
+        <styleUrl>#icon-1899-FFD600</styleUrl>
+        <Point>
+          <coordinates>
+            30.2902374,59.9599398,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ремонт обуви, продажа шнурков.</name>
+        <description>Окошка рядом со «Спасибо»</description>
+        <styleUrl>#icon-1899-FFD600</styleUrl>
+        <Point>
+          <coordinates>
+            30.2891738,59.9589898,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ремонт обуви</name>
+        <styleUrl>#icon-1899-FFD600-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3059524,59.9717174,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Гардероб-Чик</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3056955,59.9642028,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ателье на Большой Пушкарской</name>
+        <description>Пошив, реставрация, перекрой одежды из кожи, меха, ткани. 25 лет в Санкт-Петербурге</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            30.3102496,59.9626251,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Благотворительные/общественные проекты</name>
+      <Placemark>
+        <name><![CDATA[Центр реабилитации людей с аутизмом "Антон тут рядом"]]></name>
+        <styleUrl>#icon-1899-817717-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3280835,59.9526883,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Благотворительный Фонд "ПРО АРТЕ"]]></name>
+        <description>м.Горьковская, Петропавловская крепость, Невская куртина, левая сторона </description>
+        <styleUrl>#icon-1899-817717</styleUrl>
+        <Point>
+          <coordinates>
+            30.3206914,59.9498918,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Дорогою Добра</name>
+        <styleUrl>#icon-1899-817717-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.313135,59.971534,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Санкт-Петербургский Благотворительный Общественный Фонд Медико-социальных Программ Гуманитарное Действие</name>
+        <styleUrl>#icon-1899-817717-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.2874509999999,59.955425,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Легко-легко</name>
+        <styleUrl>#icon-1899-817717-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.297986,59.955575,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Благотворительный фонд AdVita</name>
+        <styleUrl>#icon-1899-817717-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3132856,59.9662017,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Раздельный сбор на Петроградке</name>
+        <styleUrl>#icon-1899-817717-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3002441,59.9523168,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>ХЭСЕД АВРААМ, еврейский благотворительный центр</name>
+        <styleUrl>#icon-1899-817717-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.2882228,59.961613,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Дом быта</name>
+        <styleUrl>#icon-1899-817717-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3119767,59.9640765,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Медицина</name>
+      <Placemark>
+        <name>Анализы Citylab</name>
+        <styleUrl>#icon-1899-FF5252-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3094245,59.970051,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Первый медицинский институт</name>
+        <styleUrl>#icon-1899-FF5252-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3179955,59.9662782,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Первая семейная клиника</name>
+        <styleUrl>#icon-1899-FF5252-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            30.3169656,59.9595598,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

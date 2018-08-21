@@ -1,107 +1,98 @@
 import requests  
 import datetime
-import csv
 from sklearn import neighbors
 import numpy as np
+import xml.etree.ElementTree as ET
 import config
 import telebot
 import messages
 
 bot = telebot.TeleBot(config.token)
 
+places = loadPlacesFromKML(config.places_kml_file)
+trees = getKDTrees(places)
+
+
+@bot.message_handler(commands=['start', 'help']
+def handke_start_help(message):
+    bot.send_message(message.chat.id, messages.repeat_messages['ru']['help'])
+
 @bot.message_handler(content_types=["text"])
 def repeat_all_text_messages(message):
     bot.send_message(message.chat.id, messages.repeat_messages['ru']['no_repeat'])
 
-
-def loadPlaces(filename):
-
-    with open(filename) as f:
-        reader = csv.reader(f, delimiter=';', skipinitialspace=True)
-        header = next(reader)
-        places_dict_list = [dict(zip(header, map(str, row))) for row in reader]
-        return places_dict_list
-
-def getKDTree(places):
-    coords = [[i['lat'], i['lng']] for i in places]
-    X = np.array(coords)
-    tree = neighbors.KDTree(X, leaf_size=2)
-
-    return tree
-
-def getNearestPlacesIndexes(tree, lat, lng, radius):
-    return tree.query_radius([[lat, lng]], r=radius)
+@bot.message_handler(content_types=["location"])
+def send_nearest_places(message):
+    bot.send_message(message.chat.id str(message))
 
 
+# loader
+ns = {'kml': 'http://www.opengis.net/kml/2.2'}
 
-class BotHandler:
+def loadPlacesFromKML(kml_filename):
+    tree = ET.parse(kml_filename)
+    root = tree.getroot()
 
-    def __init__(self, token):
-        self.token = token
-        self.api_url = "https://api.telegram.org/bot{}/".format(token)
+    document = root.find("kml:Document", ns)
 
-    def get_updates(self, offset=None, timeout=30):
-        method = 'getUpdates'
-        params = {'timeout': timeout, 'offset': offset}
-        resp = requests.get(self.api_url + method, params)
-        result_json = resp.json()['result']
-        return result_json
+    folders = document.findall("kml:Folder", ns)
 
-    def send_message(self, chat_id, text):
-        params = {'chat_id': chat_id, 'text': text}
-        method = 'sendMessage'
-        resp = requests.post(self.api_url + method, params)
-        return resp
+    places = {
+        'Все заведения':[],
+    }
 
-    def send_location(self, chat_id, lat, lng):
-        params = {'chat_id': chat_id, 'latitude': lat, 'longitude': lng}
-        method = 'sendLocation'
-        resp = requests.post(self.api_url + method, params)
-        return resp
+    for folder in folders:
+        folder_name = folder.find('kml:name',ns).text
 
-    def get_last_update(self):
-        get_result = self.get_updates()
+        places[folder_name]  = []
 
-        if len(get_result) > 0:
-            last_update = get_result[-1]
-        else:
-            last_update = {}
+        places_in_folder = folder.findall('kml:Placemark', ns)
 
-        return last_update
+        for placemark in places_in_folder:
+            place = {}
+            
+            kml_name = placemark.find('kml:name',ns)
+            place['name'] = kml_name.text if kml_name is not None else ''
 
+            kml_description = placemark.find('kml:description', ns)
+            place['description'] = kml_description.text if kml_description is not None else ''
 
-carpo_bot = BotHandler('630168364:AAGihSK-Jki5nMZfw6IdRQs-PEwaJpZ30Cw')  
-now = datetime.datetime.now()
+            point = placemark.find('kml:Point', ns)
 
-def main():  
-    new_offset = None
+            if point is not None:
+                kml_coords = point.find('kml:coordinates', ns)
+                coords = kml_coords.text.strip().split(',') if kml_coords is not None else [0,0,0]
+                place['lat'] = coords[0]
+                place['lng'] = coords[1]
 
-    places = loadPlaces('places.csv')
-    tree = getKDTree(places)
+            places['Все заведения'].append(place)
+            places[folder_name].append(place)
 
-    while True:
-        carpo_bot.get_updates(new_offset)
-
-        last_update = carpo_bot.get_last_update()
-
-        if last_update:
-
-            last_update_id = last_update['update_id']
-            #last_chat_text = last_update['message']['text'] if 'text' in last_update['message'] else ''
-            last_chat_id = last_update['message']['chat']['id']
-            last_chat_name = last_update['message']['chat']['first_name']
-
-            user_location = last_update['message']['location'] if 'location' in last_update['message'] else {}
-
-            if user_location:
-                nearest_places_indexes = getNearestPlacesIndexes(tree, user_location['latitude'], user_location['longitude'], 0.3)
-                
-                for i in nearest_places_indexes[0]:
-                    carpo_bot.send_message(last_chat_id, places[i]['title'] + '\n' + places[i]['info'])
-                    carpo_bot.send_location(last_chat_id, places[i]['lat'], places[i]['lng'])
-
-            new_offset = last_update_id + 1
+    return places
 
 
-if __name__ == '__main__':  
+def getKDTrees(places):
+
+    trees = {}
+
+    for place_type in places.keys():
+        coords = [[i['lat'], i['lng']] for i in places[place_type]]
+        X = np.array(coords)
+        tree = neighbors.KDTree(X, leaf_size=2)
+
+        trees[place_type] = tree
+
+    return trees
+
+def getNearestPlacesIndexes(tree, lat, lng, neighbors_k ):
+    dist, ind = tree.query([[lat, lng]], k=neighbors_k)
+
+    return ind[0]
+
+
+#main
+
+if __name__ == '__main__':
+
+
    bot.polling(none_stop=True)
