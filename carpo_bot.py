@@ -59,8 +59,6 @@ def loadPlacesFromKML(kml_filename):
 
         places_type_index +=1
 
-    print(places.keys())
-
     return places
 
 
@@ -80,7 +78,7 @@ def getKDTrees(places):
 def getNearestPlacesIndexes(tree, lat, lng, neighbors_k ):
     if(len(tree) < neighbors_k):
         neighbors_k = len(tree)
-    
+
     dist, ind = tree.query([[lat, lng]], k=neighbors_k)
 
     return ind[0]
