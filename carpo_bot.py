@@ -77,8 +77,8 @@ trees = getKDTrees(places)
 
 main_keyboard = telebot.types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True)
 button_geo = types.KeyboardButton(text="Отправить местоположение", request_location=True)
-keyboard.add(button_phone, button_geo)
-bot.send_message(message.chat.id, reply_markup=keyboard)
+main_keyboard.add(button_geo)
+bot.send_message(message.chat.id, reply_markup=main_keyboard)
 
 
 @bot.message_handler(commands=['start', 'help'])
