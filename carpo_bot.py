@@ -26,7 +26,7 @@ def loadPlacesFromKML(kml_filename):
     }
 
     places_type_index = 1
-    
+
     for folder in folders:
 
         folder_name = folder.find('kml:name',ns).text
@@ -78,6 +78,9 @@ def getKDTrees(places):
     return trees
 
 def getNearestPlacesIndexes(tree, lat, lng, neighbors_k ):
+    if(len(tree) < neighbors_k):
+        neighbors_k = len(tree)
+    
     dist, ind = tree.query([[lat, lng]], k=neighbors_k)
 
     return ind[0]
