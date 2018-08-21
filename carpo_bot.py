@@ -55,7 +55,7 @@ def loadPlacesFromKML(kml_filename):
                 place['lng'] = coords[0]
 
             places['0']['list'].append(place)
-            places[places_type_index]['list'].append(place)
+            places[str(places_type_index)]['list'].append(place)
 
         places_type_index+=1
 
