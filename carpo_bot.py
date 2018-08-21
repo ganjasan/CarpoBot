@@ -112,7 +112,7 @@ def send_nearest_places(message):
 @bot.callback_query_handler(func=lambda call: True)
 def callback_inline(call):
 
-    data = call.data.split("|")
+    data = call.data.split("#")
     place_type = data[0]
 
     lat = data[1]
