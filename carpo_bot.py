@@ -13,7 +13,7 @@ places = loadPlacesFromKML(config.places_kml_file)
 trees = getKDTrees(places)
 
 
-@bot.message_handler(commands=['start', 'help']
+@bot.message_handler(commands=['start', 'help'])
 def handke_start_help(message):
     bot.send_message(message.chat.id, messages.repeat_messages['ru']['help'])
 
