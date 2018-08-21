@@ -14,7 +14,7 @@ trees = getKDTrees(places)
 
 
 @bot.message_handler(commands=['start', 'help'])
-def handke_start_help(message):
+def handle_start_help(message):
     bot.send_message(message.chat.id, messages.repeat_messages['ru']['help'])
 
 @bot.message_handler(content_types=["text"])
@@ -23,7 +23,7 @@ def repeat_all_text_messages(message):
 
 @bot.message_handler(content_types=["location"])
 def send_nearest_places(message):
-    bot.send_message(message.chat.id str(message))
+    bot.send_message(message.chat.id, str(message))
 
 
 # loader
